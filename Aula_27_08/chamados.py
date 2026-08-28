@@ -31,3 +31,6 @@ def buscar(self, chamado):
     while atual is not None:
         if atual == chamado:
             return position
+        atual = atual.next
+        position += 1
+    return -1
